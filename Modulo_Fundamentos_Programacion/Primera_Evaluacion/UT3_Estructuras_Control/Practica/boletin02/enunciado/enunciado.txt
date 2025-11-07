@@ -1,0 +1,59 @@
+*** Ejercicios Python 2 ***
+
+Este boletín de ejercicios está orientado a practicar fundamentalmente con variables enteras y
+float, operadores aritméticos sencillos, dos sentencias de control (if, for y while), la entrada de
+datos por teclado y la generación de números aleatorios.
+
+
+1. Escribir un programa en python que nos pida tres números en cualquier orden y nos los
+muestre en pantalla ordenados de menor a mayor
+
+
+2. Idem al anterior pero pidiéndonos apellidos de personas
+
+
+3. Escribir un programa en python que nos pida las notas de los dos trimestres y nos
+muestre la media aritmética resultante
+
+
+4. Escribir un programa en python que nos pida las notas obtenidas en un trimestre y nos
+muestre la media ponderada sabiendo que;
+
+    ◦ La primera nota corresponde al trabajo en clase y cuenta como un 10% del total
+    ◦ La segunda corresponde a los ejercicios prácticos: 20%
+    ◦ La tercera la nota del examen: 70%
+
+
+5. Modifica el ejercicio anterior para que cuando la media salga como aprobado pero el
+alumno tenga menos de un 4,5 en cualquiera de los apartados la nota resultante será
+un 4
+
+
+6. Escribir un programa en python que pida una entrada por teclado hasta que escribamos
+la palabra FIN (con mayúsculas). En ese caso terminamos y mostramos por pantalla el
+numero de entradas válidas que hemos hecho (sin contar esta última que sólo sirve para
+finalizar el programa)
+
+
+7. Escribir un programa en python que pida un número por teclado y nos imprima la tabla
+de multiplicar de dicho número del 1 al 10. Por ejemplo, si introducimos el 74 el
+resultado será algo así:
+
+    74 x 1 = 74
+    74 x 2 = 148
+    …
+    74 x 10 = 740
+
+
+8. Escribir un programa en python que pida una contraseña por teclado (dos veces) y si no
+coinciden nos las vuelva a pedir hasta que lo hagan
+
+
+9. Escribir un programa en python que nos pida nuestro nombre y apellidos (dos peticiones
+hechas en ese orden) y nos lo escriba formateado de la siguiente forma:
+Morales Vázquez, José María
+
+
+10. Escribir un programa en python que nos pida elegir entre cuatro destinos turísticos
+(Francia, Italia, Chile o Japón) y dependiendo de nuestra respuesta nos diga cual es la
+capital de nuestro destino (París, Roma, Santiago de Chile o Tokio)

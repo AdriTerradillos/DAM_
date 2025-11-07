@@ -1,0 +1,42 @@
+*** Ejercicios Python 3 ***
+
+Este boletín de ejercicios está orientado a practicar con todo lo visto hasta ahora
+
+
+1. Escribir un programa en python que pida al usuario un número y escriba todos sus
+divisores
+
+
+2. Idem, pero que ponga los divisores uno detrás de otro separados por comas en lugar de
+uno debajo de otro
+
+
+3. Realiza un juego que consiste en acertar un numero que el ordenador elige de forma
+aleatoria entre 1 y 50. Para ello se leen por teclado una serie de números, para los que
+se indica ”mayor”' o “menor”, según sea mayor o menor respecto al numero secreto. El
+proceso termina cuando se acierta o cuando se superan el número máximo de intentos
+establecidos en 3. Si lo prefieres, puedes parametrizar la dificultad del juego
+estableciendo dos variables para el número máximo (50) o el número de intentos (3)
+
+
+4. Modifica el programa anterior para que el programa te de todos los intentos que
+necesites pero que cuando aciertes te informe de cuantas veces has fallado antes de
+lograrlo
+
+
+5. Escribir un programa que pida números enteros por teclado. La ejecución terminará
+cuando el usuario introduzca la palabra EXIT. En ese momento debería de mostrar un
+mensaje diciendo el número de números introducidos, la suma de todos y su media
+aritmética.
+
+
+6. Modificar el programa anterior para que, además, nos diga cual han sido el número
+mayor y el menor que has introducido
+
+
+7. Escribir un programa en Python que te escriba todos los números primos que hay entre
+el 1 y el 100
+
+
+8. Modifica el programa anterior para que sea el usuario quién introduzca dos números y
+se nos muestre los primos que hay entre ambos

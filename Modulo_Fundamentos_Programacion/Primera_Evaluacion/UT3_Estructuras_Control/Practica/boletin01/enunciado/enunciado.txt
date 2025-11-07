@@ -1,0 +1,69 @@
+*** Ejercicios Python 1 ***
+
+Este boletín de ejercicios está orientado a practicar fundamentalmente con variables enteras y
+float, operadores aritméticos sencillos, dos sentencias de control (if, for y while), la entrada de
+datos por teclado y la generación de números aleatorios
+
+
+1. Escribir un programa donde se muestren los 10 primeros números enteros
+
+
+2. Escribir un programa donde se muestren los 50 primeros números pares
+
+
+3. Escribir un programa donde se muestren los 5 primeros números múltiplos de uno dado
+por el usuario
+
+
+4. Escribir un programa donde se muestren todos los números divisibles por 7 menores a
+10000
+
+
+5. Escribir un programa que pida un número al usuario y diga si es par o impar
+
+
+6. Escribir un programa que pida un número al usuario y diga si es divisible por 3 o no.
+
+
+7. Escribir un programa que pida un número al usuario que simule ser el precio de un
+artículo y escriba el resultado de aplicarle el IVA del 21%
+
+
+8. Escribir un programa que genere un número aleatorio entre el 0 y el 50 y lo muestre
+
+
+9. Escribir un programa que genere dos números aleatorios simultáneamente entre el 1 y el
+6 (simulando una tirada de dos dados)
+
+
+10. Escribir un programa que nos pida dos números y genere un número aleatorio
+comprendido entre ambos. Por el momento no te preocupes de que el primer número
+siempre debería de ser menor que el segundo, simplemente no los metas en un orden
+incorrecto.
+
+
+11. Modificar el programa del punto anterior para que si el primer número que metemos es
+mayor que el segundo funcione correctamente. Es decir, si metemos en primer lugar el
+50 y en segundo el 10 nos debería de generar un número aleatorio entre el 10 y el 50 (y
+no entre el 50 y el 10 que no tiene mucha lógica...)
+
+
+12. Escribir un programa que genere seis números aleatorios entre el 1 y el 49 (simulando
+una primitiva). Por el momento no te preocupes de que algunos números puedan salir
+repetidos. Ya resolveremos eso más adelante.
+
+
+13. Escribir un programa que nos permita generar una quiniela. Para ello nos debe generar
+quince números aleatorios entre el 1 y el 3. Recuerda que los resultados válidos son 1 X
+o 2, así que si te sale un 3 lo que tienes que imprimir en pantalla es una X
+
+
+14. Escribe un programa que genere números aleatorios entre el 1 y el 1000 sin parar y que
+sólo se detenga cuando salga el 666
+
+
+15. Escribir un programa que pida un número al usuario y calcule si es primo o no lo es
+
+
+16. Escribir un programa que genere un número aleatorio entre el 10.000.000 y el
+50.000.000 que sea primo
