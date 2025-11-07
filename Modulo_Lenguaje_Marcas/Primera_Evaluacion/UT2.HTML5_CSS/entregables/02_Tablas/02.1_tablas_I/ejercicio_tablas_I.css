@@ -1,0 +1,89 @@
+body {
+    background-color: floralwhite;
+    margin: auto;
+    color: black;
+    text-align: center;
+
+
+
+}
+
+/*asignamos una estructura de diseño a la etiqueta párrafo*/
+p {
+
+    margin: 20px 15px 20px 150px;
+    text-align: left;
+    padding-left: 200px;
+
+
+
+
+}
+
+/* le damos a nuestra tabla un diseño para encuadrarla dentro de cuadriculas*/
+table, th, td {
+    margin: auto; /* con margin, centro el contenido seleccionado*/
+    align-content: center;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+/* le damos a etiquetas <th> y <td>, mayor separación y distancia con las cuadriculas de la tabla*/
+th, td {
+    padding: 1px;
+}
+
+#DiaSemana_ {
+    background-color: darkcyan;
+}
+
+#Estado_ {
+    background-color: paleturquoise
+}
+
+
+#Temperatura_ {
+    background-color: papayawhip
+
+}
+
+/* asignamos ahora una estructura de diseño a el id del head*/
+#h1_head {
+
+    color: purple;
+    margin: 20px;
+    padding-top: 20px;
+    padding-right: 450px;
+
+}
+
+/* diseño y estructura de tags o etiquetas de la tercera tabla */
+
+#table3  {
+
+    border-collapse: collapse;
+     margin: auto;
+
+}
+
+
+#h3_tabla3 {
+    color: gray;
+
+}
+
+
+#titulo_ {
+    background-color: skyblue;
+
+}
+
+
+#duracion_ {
+    background-color: bisque;
+}
+
+#genero_ {
+    background-color: azure;
+}
