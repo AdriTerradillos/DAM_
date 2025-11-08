@@ -1,5 +1,5 @@
 import math
-from dbm import error
+import random
 
 # *** BOLETÍN 1 ***
 
@@ -13,12 +13,13 @@ from dbm import error
 '''
 
 print('** ejercicio 1 **')
-numeros = 1
 
+numeros = 1
 for numeros in range(11):
     print(numeros)
 
 print('Fin ejercicio')
+print()
 
 
 #2. Escribir un programa donde se muestren los 50 primeros números pares
@@ -30,13 +31,14 @@ print('Fin ejercicio')
 '''
 
 print('** ejercicio 2 **')
-numbers = 2
 
+numbers = 2
 for numbers in range(101):
-    if numbers %2 == 0:
-        print(numbers)
+    par = numbers * 2
+    print(par)
 
 print('Fin del ejercicio')
+print()
 
 
 
@@ -50,9 +52,10 @@ print('Fin del ejercicio')
 3º- genero el bucle FOR para mostrar los 5 primeros múltiplos
 
 '''
-print('*** ejercicio 3 ***')
-num = int(input('Ingresa un número [1 - 6] '))
 
+print('*** ejercicio 3 ***')
+
+num = int(input('Ingresa un número [1 - 6] '))
 
 print(f'los 5 primeros múltiplos de {num} son ') # imprimo mensaje previo al bucle for
 # para facilitar la lectura por pantalla
@@ -62,13 +65,14 @@ for i in range(1, 6):
     print(num_multiplo)
 
 print('Fin ejercicio')
+print()
 
 
 #4. Escribir un programa donde se muestren todos los números divisibles por 7 menores a
 #10_000
 
 '''
-1º- genero variable numeroDivisibles
+1º- genero variable numero_
 2º- entro en el bucle FOR para comprobar números divisibles a 7 menores a 10_000 
 3º- imprimo mensaje por pantalla
 '''
@@ -90,7 +94,7 @@ print()
 '''
 
 print(' *** ejercicio 5 ***')
-numeroS = int (input('Ingresa un número '))
+numeroS = int (input('Ingresa un número para averiguar si es par o impar '))
 
 if numeroS %2 == 0:
     print(numeroS , 'es número par')
@@ -111,7 +115,7 @@ print()
 '''
 
 print('*** ejercicio 6 ***')
-numDiv3 = int (input('Ingresa un número '))
+numDiv3 = int (input('Ingresa un número para averiguar si es divisible por 3 '))
 
 if numDiv3 %3 == 0:
     print(numDiv3 , 'es divisible por 3')
@@ -127,16 +131,101 @@ print()
 #artículo y escriba el resultado de aplicarle el IVA del 21%
 
 '''
-1º- genero una variable numIva y la incorporo al input para salir por teclado
-
-
-
+1º- genero variable precio a float y la incorporo al input para salir por teclado 
+2º- genero la variable precioIva. Compruebo el Iva agregado al producto. 
+Imprimo el mensaje
 '''
 
+print('*** ejercicio 7 ***')
+
+precio = float (input('Introduce el precio del artículo [con decimales, €]'))
+precioIva = precio * 1.21
+
+print('Precio del artículo: ' , precio , '€')
+print('Precio del articulo con IVA del 21%: ' , precioIva, '€')
+
+print('Fin del programa')
+print()
 
 #8. Escribir un programa que genere un número aleatorio entre el 0 y el 50 y lo muestre
 
+''' 
+1º- random.randint() para acoplar los valores mayor (50) y menor (0)
+2º- Imprimo el mensaje
+'''
+
+print('*** ejercicio 8 ***')
+
+numAleatorio = random.randint(0, 50)
+print('el número aleatorio entre 0 y 50 es: ' , numAleatorio)
+
+print('Fin del programa')
+print()
+
+
+# 9. Escribir un programa que genere dos números aleatorios simultáneamente entre el 1 y el
+# 6 (simulando una tirada de dos dados)
+
+'''
+1º- genero dos variables 'dado1' y 'dado2 con random.randint() para generar un número aleatorio entre 1 y 6
+2º- math.radians() para generar valores aleatorio 
+2º- Imprimo el mensaje por pantalla
+'''
+
+print('*** ejercicio 9 ***')
+
+dado1 = random.randint(1, 6)
+dado2 = random.randint(1, 6)
+
+print('Resultado primer dado: ' , dado1)
+print('Resultado primer dado: ' , dado2)
+
+print('Fin ejercicio')
+print()
 
 
 
+
+
+
+# 10. Escribir un programa que nos pida dos números y genere un número aleatorio
+# comprendido entre ambos. Por el momento no te preocupes de que el primer número
+# siempre debería de ser menor que el segundo, simplemente no los metas en un orden
+# incorrecto.
+
+'''
+1º- genero dos variables 'numAleatorio1' y 'numAleatorio2'. Integro el input
+2º- Compruebo si el primer número es menor que el segundo con un if else
+3º- Imprimo el mensaje por pantalla
+'''
+
+print('*** ejercicio 10 ***')
+
+numAleatorio1 = int (input('Ingresa el primer valor numerico '))
+numAleatorio2 = int (input('Ahora el segundo valor  '))
+
+if numAleatorio1 < numAleatorio2:
+    print(numAleatorio1 , ' es menor que ' , numAleatorio2)
+
+else:
+    print(numAleatorio1 , ' es mayor que ' , numAleatorio2)
+
+
+print('Fin del programa')
+print()
+
+
+#11. Modificar el programa del punto anterior para que si el primer número que metemos es
+#mayor que el segundo funcione correctamente. Es decir, si metemos en primer lugar el
+#50 y en segundo el 10 nos debería de generar un número aleatorio entre el 10 y el 50 (y
+#no entre el 50 y el 10 que no tiene mucha lógica...)
+
+
+
+
+
+
+#12. Escribir un programa que genere seis números aleatorios entre el 1 y el 49 (simulando
+#una primitiva). Por el momento no te preocupes de que algunos números puedan salir
+#repetidos. Ya resolveremos eso más adelante.
 
