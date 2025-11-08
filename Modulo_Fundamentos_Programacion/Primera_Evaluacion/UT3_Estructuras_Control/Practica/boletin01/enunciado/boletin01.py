@@ -168,7 +168,6 @@ print()
 
 '''
 1º- genero dos variables 'dado1' y 'dado2 con random.randint() para generar un número aleatorio entre 1 y 6
-2º- math.radians() para generar valores aleatorio 
 2º- Imprimo el mensaje por pantalla
 '''
 
@@ -213,6 +212,7 @@ else:
 
 print('Fin del programa')
 print()
+
 
 
 #11. Modificar el programa del punto anterior para que si el primer número que metemos es
