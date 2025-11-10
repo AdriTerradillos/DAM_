@@ -7,14 +7,14 @@ public class boletin07 {
 
     public static void main(String[] args) {
 
-        //ejercicio1();
-        //ejercicio2();
-        //ejercicio3();
-        //ejercicio4();
-        //ejercicio5();
-        //ejercicio6();
-        //ejercicio7();
-        //ejercicio8();
+        ejercicio1();
+        ejercicio2();
+        ejercicio3();
+        ejercicio4();
+        ejercicio5();
+        ejercicio6();
+        ejercicio7();
+        ejercicio8();
     }
 
 
