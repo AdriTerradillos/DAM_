@@ -1,0 +1,37 @@
+
+Este boletín de ejercicios está orientado a practicar con todo lo visto en los boletines
+anteriores incluyendo, además
+
+• vectores y/o arrays,
+listas o estructuras complejas similares
+
+1. Escribir un programa que genere seis números aleatorios entre el 1 y el 49 sin que
+ninguno de ellos esté repetido (simulando una lotería primitiva).
+
+
+2. Hacer un programa en que nos permita calcular todos los divisores comunes a dos
+números
+
+
+3. Escribir un programa que cuenta las palabras que tiene una frase introducida
+previamente por teclado. Las palabras pueden estar separadas por más de un espacio
+pero siempre debe de haber al menos uno. No tenemos en cuenta los signos de
+puntuación como separadores.
+
+
+4. Escribir un programa que nos pida una cadena por teclado y luego cuente cuantas
+palabras hay en ella con cuatro o más vocales diferentes. Por ejemplo, si introducimos
+la frase “Crisis constitucional por culpa del murcielago guineoecuatorial” Nos debería
+de decir que 3. Tendrías que tener en cuenta que las vocales pueden ir en mayúsculas
+o no y son la misma letra. Presupón que ninguna vocal va acentuada de ninguna
+forma.
+
+
+5. Escribe un programa que genere 100 números aleatorios comprendidos entre el 1 y
+50 (ambos inclusive) y, posteriormente, obtenga el mayor, el menor y el que mas veces
+se repite (y nos diga cuantas veces lo hace).
+
+
+6. Escribe un programa que nos permita contar el número de veces que se repite cada
+cifra en un número. Por ejemplo, el número 885210003 tiene tres 0, un 1, un 2, un 5 y
+dos 8.
