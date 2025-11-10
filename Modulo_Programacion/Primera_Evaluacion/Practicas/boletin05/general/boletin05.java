@@ -1,9 +1,13 @@
+package Primera_Evaluacion.Practicas.boletin05.general;
+
+import java.util.Random;
+import java.util.Scanner;
 
 public class boletin05 {
 
 
     public static void main(String[] args) {
-        
+
         // ejercicio1();
         // ejercicio2();
         // ejercicio3();
@@ -55,7 +59,7 @@ public class boletin05 {
             System.out.print(numeros[i] + " ");
         }
 
-        System.out.println("Fin del ejercicio");
+        System.out.println("\nFin del ejercicio");
         System.out.println();
     }
 
@@ -80,7 +84,7 @@ public class boletin05 {
         int num1 = teclado.nextInt();
 
         System.out.print("Introduce el segundo número: ");
-        int num2 = sc.nextInt();
+        int num2 = teclado.nextInt();
 
         int menor = (num1 < num2) ? num1 : num2;
         int[] divisores = new int[menor];
@@ -97,7 +101,7 @@ public class boletin05 {
         for (int i = 0; i < contador; i++) {
             System.out.print(divisores[i] + " ");
         }
-        System.out.println("Fin del ejercicio");
+        System.out.println("\nFin del ejercicio");
         System.out.println();
     }
 
@@ -139,7 +143,7 @@ public class boletin05 {
 
         System.out.println("Número de palabras: " + contador);
 
-        System.out.println("Fin del ejercicio");
+        System.out.println("\nFin del ejercicio");
         System.out.println();
 
     }
@@ -193,7 +197,7 @@ public class boletin05 {
 
         System.out.println("Palabras con 4 o más vocales diferentes: " + contadorPalabras);
 
-        System.out.println("Fin del ejercicio");
+        System.out.println("\nFin del ejercicio");
         System.out.println();
     }
 
@@ -246,7 +250,7 @@ public class boletin05 {
         System.out.println("Menor: " + menor);
         System.out.println("Número más repetido: " + masRepetido + " (" + maxRepeticiones + " veces)");
 
-        System.out.println("Fin del ejercicio");
+        System.out.println("\nFin del ejercicio");
         System.out.println();
     }
 
@@ -284,7 +288,7 @@ public class boletin05 {
             if (contador[i] > 0) {
                 System.out.println("El dígito " + i + " aparece " + contador[i] + " veces.");
 
-                System.out.println("Fin ejercicio");
+                System.out.println("\nFin ejercicio");
                 System.out.println();
             }
         }
@@ -304,4 +308,3 @@ public class boletin05 {
 
 
 
-}
