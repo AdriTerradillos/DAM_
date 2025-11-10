@@ -2,6 +2,16 @@
 public class boletin05 {
 
 
+    public static void main(String[] args) {
+        // Descomenta el ejercicio que quieras ejecutar
+        // ejercicio1();
+        // ejercicio2();
+        // ejercicio3();
+        // ejercicio4();
+        // ejercicio5();
+        // ejercicio6();
+    }
+
     /*
         1. Escribir un programa que genere seis números aleatorios entre el 1 y el 49 sin que
          ninguno de ellos esté repetido (simulando una lotería primitiva).
