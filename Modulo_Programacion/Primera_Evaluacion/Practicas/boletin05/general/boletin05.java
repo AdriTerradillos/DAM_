@@ -3,7 +3,7 @@ public class boletin05 {
 
 
     public static void main(String[] args) {
-        // Descomenta el ejercicio que quieras ejecutar
+        
         // ejercicio1();
         // ejercicio2();
         // ejercicio3();
