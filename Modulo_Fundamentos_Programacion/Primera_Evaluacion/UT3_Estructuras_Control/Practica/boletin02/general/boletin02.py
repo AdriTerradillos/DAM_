@@ -1,5 +1,11 @@
 #   *** EJERCICIOS PYTHON 2 ***
 
+
+
+
+
+
+
 # Este boletín de ejercicios está orientado a practicar fundamentalmente con variables enteras y
 # float, operadores aritméticos sencillos, dos sentencias de control (if, for y while), la entrada de
 # datos por teclado y la generación de números aleatorios.
@@ -16,68 +22,155 @@
 3º- imprimo mensaje por pantalla
 '''
 
-print('*** ejercicio 1 ***')
-print('Se le pedirá introducir tres números enteros')
-print('Objetivo programa: ordenar de menor a mayor')
-num1 = int(input('Introduzca el primer valor numérico: '))
-num2 = int(input('Introduzca el segundo valor numérico: '))
-num3 = int(input('Introduzca el tercer valor numérico: '))
-
-if (num1 > num2) or (num1 > num3):
-
-
-
-
-
-
+def ejercicio1():
+    print('*** ejercicio 1 ***')
+    print('Se le pedirá introducir tres números enteros')
+    print('Objetivo programa: ordenar de menor a mayor')
+    num1 = int(input('Introduzca el primer valor numérico: '))
+    num2 = int(input('Introduzca el segundo valor numérico: '))
+    num3 = int(input('Introduzca el tercer valor numérico: '))
 
 
 
 # 2. Idem al anterior pero pidiéndonos apellidos de personas
 
+'''
+1º- Pido al usuario que ingrese sus apellidos usando input().
+2º- Guardo la respuesta en la variable 'apellidos'
+3º- Muestro por pantalla los apellidos ingresados.
+'''
+def ejercicio2():
+    apellidos = input("Por favor, introduce tus apellidos: ")
 
-# 3. Escribir un programa en python que nos pida las notas de los dos trimestres y nos
-# muestre la media aritmética resultante
-
-
-# 4. Escribir un programa en python que nos pida las notas obtenidas en un trimestre y nos
-# muestre la media ponderada sabiendo que;
-
-    # ◦ La primera nota corresponde al trabajo en clase y cuenta como un 10% del total
-    # ◦ La segunda corresponde a los ejercicios prácticos: 20%
-    # ◦ La tercera la nota del examen: 70%
+print("Tus apellidos son:", apellidos)
 
 
-# 5. Modifica el ejercicio anterior para que cuando la media salga como aprobado pero el
-# alumno tenga menos de un 4,5 en cualquiera de los apartados la nota resultante será
-# un 4
+# 3. Programa que pide las notas de dos trimestres y calcula la media aritmética
+
+'''
+1º- Solicito al usuario las notas del primer y segundo trimestre.
+2º- Convierto las entradas a float para poder hacer operaciones numéricas.
+3º- Calculo la media aritmética sumando y dividiendo entre 2.
+4º- Muestro el resultado por pantalla.
+'''
+
+def ejercicio3():
+    nota1 = float(input("Introduce la nota del primer trimestre: "))
+    nota2 = float(input("Introduce la nota del segundo trimestre: "))
+    media = (nota1 + nota2) / 2
+
+print("La media aritmética es:", media)
 
 
-# 6. Escribir un programa en python que pida una entrada por teclado hasta que escribamos
-# la palabra FIN (con mayúsculas). En ese caso terminamos y mostramos por pantalla el
-# numero de entradas válidas que hemos hecho (sin contar esta última que sólo sirve para
-# finalizar el programa)
+# 4. Programa que calcula la media ponderada de un trimestre
 
+'''
+1º- Solicito las tres notas: trabajo en clase, ejercicios prácticos y examen.
+2º- Convierto las entradas a float.
+3º- Aplico la ponderación correspondiente a cada nota.
+4º- Sumo los resultados ponderados y muestro la media ponderada.
+'''
 
-# 7. Escribir un programa en python que pida un número por teclado y nos imprima la tabla
-# de multiplicar de dicho número del 1 al 10. Por ejemplo, si introducimos el 74 el
-# resultado será algo así:
+def ejercicio4():
+    trabajo = float(input("Nota del trabajo en clase (10%): "))
+    ejercicios = float(input("Nota de los ejercicios prácticos (20%): "))
+    examen = float(input("Nota del examen (70%): "))
+    media_ponderada = trabajo*0.1 + ejercicios*0.2 + examen*0.7
 
-   #  74 x 1 = 74
-   #  74 x 2 = 148
-   #  …
-   #  74 x 10 = 740
-
-
-# 8. Escribir un programa en python que pida una contraseña por teclado (dos veces) y si no
-# coinciden nos las vuelva a pedir hasta que lo hagan
-
-
-# 9. Escribir un programa en python que nos pida nuestro nombre y apellidos (dos peticiones
-# hechas en ese orden) y nos lo escriba formateado de la siguiente forma:
+print("La media ponderada es:", media_ponderada)
 
 
 
-# 10. Escribir un programa en python que nos pida elegir entre cuatro destinos turísticos
-# (Francia, Italia, Chile o Japón) y dependiendo de nuestra respuesta nos diga cual es la
-# capital de nuestro destino (París, Roma, Santiago de Chile o Tokio)
+# 5. Modificación del ejercicio anterior para comprobar mínimos
+
+'''
+1º- Calculo la media ponderada igual que antes.
+2º- Compruebo si alguna nota es menor que 4.5 y la media es aprobatoria (>5).
+3º- Si se cumple la condición, la nota final será 4.
+4º- Muestro el resultado final.
+'''
+def ejercicio5():
+    if media_ponderada >= 5 and (trabajo < 4.5 or ejercicios < 4.5 or examen < 4.5):
+        print("La nota final ajustada por mínimo es: 4")
+    else:
+        print("La nota final es:", media_ponderada)
+
+
+
+# 6. Programa que pide entradas hasta que escribamos FIN
+
+'''
+1º- Inicializo un contador para las entradas válidas.
+# 2. Uso un bucle while infinito pidiendo entradas al usuario.
+# 3. Compruebo si la entrada es 'FIN'. Si es así, salgo del bucle.
+# 4. En cada entrada válida aumento el contador.
+# 5. Al final, muestro el número de entradas válidas.
+
+contador = 0
+while True:
+    entrada = input("Introduce algo (FIN para terminar): ")
+    if entrada == "FIN":
+        break
+    contador += 1
+print("Número de entradas válidas:", contador)
+
+
+# 7. Programa que imprime la tabla de multiplicar de un número
+# Paso a paso:
+# 1. Pido al usuario un número.
+# 2. Recorro del 1 al 10 usando un bucle for.
+# 3. Multiplico el número por el contador del bucle en cada iteración.
+# 4. Imprimo el resultado en formato tabla de multiplicar.
+
+numero = int(input("Introduce un número para la tabla de multiplicar: "))
+for i in range(1, 11):
+    print(f"{numero} x {i} = {numero*i}")
+
+# 8. Programa que pide una contraseña y la confirma
+# Paso a paso:
+# 1. Uso un bucle while para seguir pidiendo las contraseñas.
+# 2. Pido al usuario la contraseña dos veces.
+# 3. Si coinciden, salgo del bucle.
+# 4. Si no coinciden, vuelvo a pedirlas.
+# ----------------------------------------------
+while True:
+    contraseña1 = input("Introduce la contraseña: ")
+    contraseña2 = input("Confirma la contraseña: ")
+    if contraseña1 == contraseña2:
+        print("Contraseña aceptada")
+        break
+    else:
+        print("No coinciden. Inténtalo de nuevo.")
+
+
+
+# 9. Programa que formatea nombre y apellidos
+
+'''
+1º- Pido el nombre y los apellidos por separado.
+2º- Uso f-strings para mostrar el nombre completo formateado.
+'''
+
+nombre = input("Introduce tu nombre: ")
+apellidos = input("Introduce tus apellidos: ")
+print(f"{apellidos}, {nombre}")
+
+
+
+# ----------------------------------------------
+# 10. Programa que muestra la capital según el destino elegido
+# Paso a paso:
+# 1. Pido al usuario que elija un destino entre Francia, Italia, Chile o Japón.
+# 2. Uso condicionales if-elif-else para mostrar la capital correspondiente.
+# ----------------------------------------------
+destino = input("Elige un destino (Francia, Italia, Chile, Japón): ")
+if destino == "Francia":
+    print("La capital es París")
+elif destino == "Italia":
+    print("La capital es Roma")
+elif destino == "Chile":
+    print("La capital es Santiago de Chile")
+elif destino == "Japón":
+    print("La capital es Tokio")
+else:
+    print("Destino no reconocido")
