@@ -1,3 +1,5 @@
+from Primera_Evaluacion.UT3_Estructuras_Control.Practica.boletin02 import general
+
 
 #   *** EJERCICIOS PYTHON 2 ***
 
@@ -11,12 +13,9 @@
 # 1. Escribir un programa en python que nos pida tres números en cualquier orden y nos los
 # muestre en pantalla ordenados de menor a mayor
 
-'''
-1º- genero tres variables Integer 'num1', 'num2' & 'num3' junto con input + formulo el mensaje
-2º- condicional if para realizar comprobaciones necesarias (operadores)
-3º- imprimo mensaje por pantalla
-'''
-from Primera_Evaluacion.UT3_Estructuras_Control.Practica.boletin02.boletin02 import apellidos
+# 1º- genero tres variables Integer 'num1', 'num2' & 'num3' junto con input + formulo el mensaje
+# 2º- condicional if para realizar comprobaciones necesarias (operadores)
+# 3º- imprimo mensaje por pantalla
 
 
 def ejercicio1():
@@ -26,6 +25,16 @@ def ejercicio1():
     num1 = int(input('Introduzca el primer valor numérico: '))
     num2 = int(input('Introduzca el segundo valor numérico: '))
     num3 = int(input('Introduzca el tercer valor numérico: '))
+
+    # los guardo en un lista
+    numeros = [num1, num2, num3]
+
+    # ordeno la lista
+    ordenados = sorted(numeros)
+    print('Los números ordenados de menor a mayor son: ', ordenados)
+    print()
+
+
 
 
 
@@ -38,10 +47,10 @@ def ejercicio1():
 '''
 
 def ejercicio2():
-    apellidos = input("Por favor, introduce tus apellidos: ")
-
-print('Tus apellidos son ' , apellidos)
-
+    print('*** ejercicio 2 ***')
+    apellidos = input('Por favor, introduce tus apellidos: ')
+    print('Tus apellidos son ' , apellidos)
+    print()
 
 # 3. Programa que pide las notas de dos trimestres y calcula la media aritmética
 
@@ -53,11 +62,12 @@ print('Tus apellidos son ' , apellidos)
 '''
 
 def ejercicio3():
-    nota1 = float(input("Introduce la nota del primer trimestre: "))
-    nota2 = float(input("Introduce la nota del segundo trimestre: "))
+    print('*** ejercicio 3 ***')
+    nota1 = float(input('Introduce la nota del primer trimestre: '))
+    nota2 = float(input('Introduce la nota del segundo trimestre: '))
     media = (nota1 + nota2) / 2
-
-print("La media aritmética es:", media)
+    print('La media aritmética es: ' , media)
+    print()
 
 
 # 4. Programa que calcula la media ponderada de un trimestre
@@ -70,13 +80,13 @@ print("La media aritmética es:", media)
 '''
 
 def ejercicio4():
-    trabajo = float(input("Nota del trabajo en clase (10%): "))
-    ejercicios = float(input("Nota de los ejercicios prácticos (20%): "))
-    examen = float(input("Nota del examen (70%): "))
+    print('*** ejercicio 4 ***')
+    trabajo = float(input('Nota del trabajo en clase (10%): '))
+    ejercicios = float(input('Nota de los ejercicios prácticos (20%): '))
+    examen = float(input('Nota del examen (70%): '))
     media_ponderada = trabajo * 0.1 + ejercicios * 0.2 + examen * 0.7
-
-print("La media ponderada es:", media_ponderada)
-
+    print('La media ponderada es: ', media_ponderada)
+    print()
 
 
 # 5. Modificación del ejercicio anterior para comprobar mínimos
@@ -89,11 +99,19 @@ print("La media ponderada es:", media_ponderada)
 '''
 
 def ejercicio5():
-    if media_ponderada >= 5 and (trabajo < 4.5 or ejercicios < 4.5 or examen < 4.5):
-        print("La nota final ajustada por mínimo es: 4")
+    print('*** ejercicio 5 ***')
+    trabajo = float (input('Nota del trabajo en clase (10%): '))
+    ejercicios = float (input('Nota de los ejercicios prácticos (20%): '))
+    examen = float (input('Nota del examen (70%): '))
 
+    media_ponderada = trabajo * 0.1 + ejercicios * 0.2 + examen * 0.7
+
+    if media_ponderada >= 5 and (trabajo < 4.5 or ejercicios < 4.5 or examen < 4.5):
+        print('La nota final ajustada por mínimo es: 4')
     else:
-        print("La nota final es:", media_ponderada)
+        print('La nota final es: ', media_ponderada)
+
+    print()
 
 
 
@@ -108,15 +126,15 @@ def ejercicio5():
 '''
 
 def ejercicio6():
+    print('*** ejercicio 6 ***')
     contador = 0
     while True:
-        entrada = input("Introduce algo (FIN para terminar): ")
-        if entrada == "FIN":
+        entrada = input('Introduce algo (FIN para terminar): ')
+        if entrada == 'FIN':
             break
         contador += 1
-
-print("Número de entradas válidas:", contador)
-
+    print('Número de entradas válidas:', contador)
+    print()
 
 # 7. Programa que imprime la tabla de multiplicar de un número
 
@@ -128,10 +146,12 @@ print("Número de entradas válidas:", contador)
 '''
 
 def ejercicio7():
-    numero = int(input("Introduce un número para la tabla de multiplicar: "))
+    print('*** ejercicio 7 ***')
+    numero = int(input('Introduce un número para la tabla de multiplicar: '))
     for i in range(1, 11):
-        print(f"{numero} x {i} = {numero * i}")
+        print(f'{numero} x {i} = {numero * i}')
 
+print()
 
 # 8. Programa que pide una contraseña y la confirma
 
@@ -143,15 +163,16 @@ def ejercicio7():
 '''
 
 def ejercicio8():
+    print('*** ejercicio 8 ***')
     while True:
-        contraseña1 = input("Introduce la contraseña: ")
-        contraseña2 = input("Confirma la contraseña: ")
-        if contraseña1 == contraseña2:
-            print("Contraseña aceptada")
+        contraseñaI = input('Introduce la contraseña: ')
+        contraseñaII = input('Confirma la contraseña: ')
+        if contraseñaI == contraseñaII:
+            print('Contraseña aceptada')
             break
         else:
-            print("No coinciden. Inténtalo de nuevo.")
-
+            print('No coinciden. Inténtalo de nuevo.')
+            print()
 
 
 # 9. Programa que formatea nombre y apellidos
@@ -162,10 +183,12 @@ def ejercicio8():
 '''
 
 def ejercicio9():
-    nombre = input("Introduce tu nombre: ")
-    apellido = input("Introduce tus apellidos: ")
+    print('*** ejercicio 9 ***')
+    nombre = input('Introduce tu nombre: ')
+    apellido = input('Introduce tus apellidos: ')
 
-    print(f"{apellido}, {nombre}")
+    print(f'{apellido}, {nombre}')
+    print()
 
 
 # 10. Programa que muestra la capital según el destino elegido
@@ -176,27 +199,28 @@ def ejercicio9():
 '''
 
 def ejercicio10():
-    destino = input("Elige un destino (Francia, Italia, Chile, Japón): ")
+    print('*** ejercicio 10 ***')
+    destino = input('Elige un destino (Francia, Italia, Chile, Japón): ')
 
-    if destino == "Francia":
-        print("La capital es París")
+    if destino == 'Francia':
+        print('La capital es París')
 
-    elif destino == "Italia":
-        print("La capital es Roma")
+    elif destino == 'Italia':
+        print('La capital es Roma')
 
-    elif destino == "Chile":
-        print("La capital es Santiago de Chile")
+    elif destino == 'Chile' or destino == 'chile':
+        print('La capital es Santiago de Chile')
 
-    elif destino == "Japón" or destino == 'Japon':
-        print("La capital es Tokio")
+    elif destino == 'Japón' or destino == 'Japon':
+        print('La capital es Tokio')
 
     else:
-        print("Destino no reconocido")
-
+        print('Destino no reconocido')
+        print()
 
 if __name__ == '__main__':
     ejercicio1()
-   # ejercicio2()
+    ejercicio2()
     ejercicio3()
     ejercicio4()
     ejercicio5()
