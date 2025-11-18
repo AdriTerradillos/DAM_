@@ -1,0 +1,50 @@
+
+Este boletín de ejercicios está orientado a practicar con
+• switch (o match en python) y arrays de una y dos dimensiones
+
+
+1. Vamos a hacer una pequeña calculadora. Solicita dos números al usuario y luego que
+escriba la operación que quiere hacer (S para suma, R para resta, M para multiplicar y D
+para dividir). Realiza la operación con un switch.
+
+
+2. Incluye operaciones adicionales (raiz cuadrada, cuadrado, cubo, por ejemplo)
+
+
+3. Pide al usuario un número del 1 al 12 y muestra el nombre del mes correspondiente.
+Muestra un error si el número no se corresponde con ningún mes
+
+
+4. Solicita una nota entre el 1 y el 10 (sin decimales) y devuelve la calificación según la
+siguiente escala: 1-2 Muy deficiente, 3-4 Insuficiente, 5 Suficiente, 6 Bien, 7-8 Notable,
+9-10 Sobresaliente
+
+
+5. Pide al usuario un número y crea un array de enteros de tantas posiciones como indique
+ese número. Rellenalo con números aleatorios entre el 10 y el 1000 y finalmente
+muestra cual es el máximo, cual el mínimo y la media aritmética con dos decimales.
+
+
+6. Modifica el ejercicio anterior para que, nos muestre en que posición del array se
+encuentran el máximo y el mínimo. Si están repetidos y aparecen en mas de una
+posición debería de indicarlas todas
+
+
+7. Pide al usuario un número y crea un array de enteros de tantas posiciones como indique
+ese número. Rellénalo con números aleatorios entre el 10 y el 1000 y finalmente
+pregunta al usuario por la posición de la que quiere recuperar el valor. El programa
+mostrará el número de la posición indicada si esta existe y un error si tratamos de
+recuperar una posición que no existe (menor a 0 o mayor a la longitud del array)
+
+
+8. Vamos a hacer una implementación del juego del buscaminas y lo primero es preparar el
+tablero. Genera un array de dos dimensiones de 5 filas por 5 columnas. El tablero
+tendrá 5 minas que se colocaran de forma aleatoria en cinco posiciones del array. Las
+minas se representarán con un 1 y las posiciones sin mina con un 0. Al final dibuja el
+tablero de esta forma:
+
+0 0 0 0 0
+0 0 1 0 0
+0 0 1 0 1
+0 0 0 0 0
+1 1 0 0 0

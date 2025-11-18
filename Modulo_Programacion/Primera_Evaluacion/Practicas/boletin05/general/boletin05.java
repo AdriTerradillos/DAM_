@@ -8,12 +8,12 @@ public class boletin05 {
 
     public static void main(String[] args) {
 
-        // ejercicio1();
-        // ejercicio2();
-        // ejercicio3();
-        // ejercicio4();
-        // ejercicio5();
-        // ejercicio6();
+         ejercicio1();
+         ejercicio2();
+         ejercicio3();
+         ejercicio4();
+         ejercicio5();
+         ejercicio6();
     }
 
     /*
