@@ -1,4 +1,4 @@
-// siempre detrás del package y antes de la clase
+package Primera_Evaluacion.UT3.Estructuras_Control;// siempre detrás del package y antes de la clase
 //import java.util.Scanner;
 //import java.util.Locale;
 

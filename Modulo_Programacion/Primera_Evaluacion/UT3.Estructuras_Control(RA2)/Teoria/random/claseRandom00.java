@@ -1,3 +1,5 @@
+package Primera_Evaluacion.UT3.Estructuras_Control;
+
 //import java.util.Random;
 
 //public class generadorNumAleatorios {

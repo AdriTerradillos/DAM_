@@ -1,8 +1,6 @@
+package bucles;
 
-
-import java.util.Random;
-
-public class bucles_For_While03 {
+public class bucles_For_While00 {
 
     public static void main(String[] args) {
         /*

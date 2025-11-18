@@ -1,6 +1,6 @@
-import java.util.Random;
+package _break;
 
-public class instruccion_Break04 {
+public class instruccion_Break00 {
 
     public static void main(String[] args) {
 
