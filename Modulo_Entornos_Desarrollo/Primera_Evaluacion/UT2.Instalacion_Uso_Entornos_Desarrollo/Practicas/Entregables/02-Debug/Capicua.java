@@ -10,7 +10,7 @@ public class Capicua {
 		Scanner teclado = new Scanner(System.in);
 		
 		do {
-			System.out.println("Introduce un numero >= 10");
+			System.out.print("Introduce un numero >= 10: ");
 			N = teclado.nextInt();
 		}while(N < 10);
 		
