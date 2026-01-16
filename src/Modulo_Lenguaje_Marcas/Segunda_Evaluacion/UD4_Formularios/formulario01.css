@@ -1,0 +1,78 @@
+body {
+  background-color: #0a8dcf;
+  font-family: Arial, sans-serif;
+}
+
+.formulario_registro {
+  width: 500px;
+  margin: 40px auto;
+}
+
+.cabecera {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-size: 40px;
+}
+
+.formulario {
+  background-color: white;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.titulo {
+  margin-bottom: 5px;
+}
+
+.texto-obligatorio {
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  padding: 8px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+}
+
+.fila {
+  display: flex;
+  align-items: center;
+}
+
+.texto-ayuda {
+  font-size: 12px;
+  color: gray;
+}
+
+.condiciones {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.boton {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  background-color: #0a8dcf;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: #087bb4;
+}

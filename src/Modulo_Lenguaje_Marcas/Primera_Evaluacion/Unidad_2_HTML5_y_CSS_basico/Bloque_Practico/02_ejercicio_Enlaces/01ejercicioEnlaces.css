@@ -1,0 +1,21 @@
+body {
+
+    background-color: aliceblue;
+    max-resolution: auto;
+}
+
+h1 {
+
+color: blueviolet;
+}
+
+h2 {
+    color: crimson;
+
+}
+
+
+p {
+    padding: 1px;
+
+}

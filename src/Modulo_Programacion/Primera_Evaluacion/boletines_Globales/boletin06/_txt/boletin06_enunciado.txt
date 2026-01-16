@@ -1,0 +1,50 @@
+
+Este boletín de ejercicios está orientado a practicar con
+• validación de cadenas de texto mediante expresiones regulares
+
+
+1. Validar un código postal de Madrid. Cinco números, los dos primeros siempre son el 28
+    Ejemplo: 28032
+
+
+2. Validar un número de teléfono
+    Ejemplo: 91345566
+
+
+3. Validar un número de teléfono móvil (debe de empezar por 6, 7 u 8)
+    Ejemplo: 655776655
+
+
+4. Validar un número de teléfono con prefijo internacional (empieza por el signo + seguido
+de dos dígitos, luego un espacio y a continuación un número de teléfono.
+    Ejemplo +34 912233444
+
+
+5. Validar dos palabras de cualquier tamaño separadas por un único espacio en blanco.
+Las palabras no pueden contener números y deben de empezar ambas por una letra
+mayúscula.
+    Ejemplo: Hola Mundo
+
+
+6. Una clave con el siguiente formato XX00-xxX-00 donde las X deben de ser letras
+mayúsculas, las x letras minúsculas y los 0 dígitos.
+    Ejemplo: AB12-xyZ-75
+
+
+7. Validar una tarjeta de crédito: cuatro grupos de cuatro números cada uno separados por
+un espacio. A continuación un espacio y la fecha de caducidad en formato MM/YY. El
+mes tiene que ser válido (entre 01 y 12)
+    Ejemplo: 1234 5678 9012 3456 03/25
+
+
+8. Un IBAN bancario de España. Las dos letras iniciales siempre tienen que ser ES
+    Ejemplo: ES61 1234 3456 42 0456323532
+
+
+9. Un número de 4 cifras mínimo y 8 cifras máximo
+    Ejemplo: 12345
+
+
+10. Una dirección IP pública de clase C. Cuatro bytes en formato decimal separados por un
+punto. Los dos primeros tienen que ser siempre 192.168.
+    Ejemplo: 192.168.30.30

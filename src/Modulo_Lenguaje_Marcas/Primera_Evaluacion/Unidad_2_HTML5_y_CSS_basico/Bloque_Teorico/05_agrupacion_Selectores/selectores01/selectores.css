@@ -1,0 +1,14 @@
+body>i {
+color:coral;
+}
+
+h3 i {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-decoration: underline;
+}
+
+h2 ~ h3{
+color:coral;
+}
+
+

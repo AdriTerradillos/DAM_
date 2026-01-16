@@ -1,0 +1,34 @@
+/* Esto es un comentario en archivo .css */
+
+
+/* en la etiqueta body, se genera un diseño predeterminado desde que empieza hasta
+que termina la etiqueta -->  <body> Contenido </body> */
+
+body {
+    background-color: floralwhite;
+    font: Roboto-Helvética;
+    font-size: 20px;
+
+}
+
+
+/* en las etiquetas de enlace (<a href="valorEnlace"> mensajeEscrito </a>
+asignamos una navegación concreta. Con un click, vamos a interactuar
+con este contenido. En esta práctica, aplica el diseño a todas aquellas tags
+con etiqueta <a> */
+
+a {
+    color: blue;
+
+}
+
+
+/* finalmente, vamos a poder también moldear a nuestro gusto las imágenes.
+A la tag 'imagen', vamos a darle una altura 'height' y un ancho 'weight' (no modifica nada,
+auto) */
+
+.img {
+    height:auto;
+    width: auto;
+}
+

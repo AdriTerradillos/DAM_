@@ -1,0 +1,92 @@
+
+
+}
+
+
+
+#id_tituloPrincipal {
+    font-size: 28px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: black;
+    text-shadow: 1px 1px 2px rgb(92, 168, 255);
+}
+
+
+#id_autor {
+    text-align: right;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+
+#id_capitulo {
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+#id_lineaSeparacion1, #id_lineaSeparacion2 {
+    height: 1px;
+    background-color: transparent;
+    margin: 5px 0;
+}
+
+
+#id_subTitulo {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    /* Línea separadora, tal como se ve en la imagen */
+    border-bottom: 2px solid rgb(69, 6, 6);
+}
+
+
+#style_parrafo {
+    text-align: justify;
+    font-size: 14px;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+/* apartado p:nth-child(5) con auto-ayuda*/
+body p:nth-child(5) {
+    border: 1px solid rgb(230, 222, 222);
+    padding: 15px;
+    background-color: rgb(224, 221, 221);
+    font-style: normal;
+    text-align: justify;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+/* Estilo para el 3er Párrafo (Bloque con líneas superior e inferior, de la imagen) */
+body p:nth-child(6) {
+    border-top: 2px solid rgb(48, 24, 24);
+    border-bottom: 2px solid;
+    padding: 10px 0;
+    font-weight: bold; /* El texto parece más grueso/en negrita */
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Letra Capital (La 'E' o 'T' grande) */
+.span, #char_parrafo {
+    color: rgb(22, 22, 210);
+    float: left; /* Permite que el texto fluya alrededor de la letra */
+    font-size: 5em;
+    line-height: 0.8;
+    margin-right: 8px;
+}

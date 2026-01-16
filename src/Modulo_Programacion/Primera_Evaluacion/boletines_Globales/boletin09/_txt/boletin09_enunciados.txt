@@ -1,0 +1,71 @@
+Ejercicios genéricos de programación 9
+
+Este boletín de ejercicios está orientado a practicar con:
+
+    • calculo numérico, sentencias de control y funciones
+
+    /*
+    1. Se denominan números amigos a dos números naturales diferentes relacionados de tal
+    manera que la suma de los divisores propios de cada uno es igual al otro número.
+    Un divisor propio de un número es un factor positivo de ese número que no sea el propio
+    número.
+
+    Por ejemplo, los divisores propios de 6 son 1, 2 y 3, pero no 6.
+    El par más pequeño de números amigos es (220, 284), y son amigos porque los divisores
+    propios de 220 son 1, 2, 4, 5, 10, 11, 20, 22, 44, 55 y 110, de los cuales la suma es 284; y los
+    divisores propios de 284 son 1, 2, 4, 71 y 142, de los cuales la suma es 220
+    Los primeros diez pares de números amigos son: (220, 284), (1184, 1210), (2620, 2924),
+    (5020, 5564), (6232, 6368), (10744, 10856), (12285, 14595), (17296, 18416), (63020,
+    76084) y (66928, 66992)
+
+    Escribe una función que reciba dos números y devuelva un valor booleano que nos diga si
+    son amigos o no
+
+    */
+
+    /*
+    2. Un número perfecto o numero es un número entero positivo que es igual a la suma de sus
+    divisores propios positivos excluyéndose a sí mismo. Dicho de otra forma, un número
+    perfecto es aquel que es amigo de sí mismo.
+
+    Así, 6 es un número perfecto porque sus divisores propios positivos son 1, 2 y 3; y 6 = 1 + 2 +
+
+    */
+
+    /*
+    3. Un divisor propio positivo de un número es un factor positivo de ese número que no sea el
+    propio número.
+    Por ejemplo, los divisores propios de 6 son 1, 2 y 3, pero no 6. Los siguientes
+    números perfectos son 28, 496 y 8128.
+
+    Escribe una función que reciba un número y nos devuelva un valor booleano diciendo si es
+    perfecto o no. El número debe de recogerse por teclado y si no es un entero positivo se
+    debería de informar al usuario y pedir otro hasta que sea correcto. Usa excepciones para ello
+
+    */
+
+    3. Un número abundante o número excesivo es un número para el cual la suma de sus divisores
+    propios es mayor que el propio número. El entero 12 es el primer número abundante. Sus
+    divisores propios son 1, 2, 3, 4 y 6 para un total de 16. La cantidad en que la suma excede al
+    número es la abundancia. El número 12 tiene una abundancia de 4, por ejemplo.
+
+    Los primeros 28 números abundantes son: 12, 18, 20, 24, 30, 36, 40, 42, 48, 54, 56, 60, 66,
+    70, 72, 78, 80, 84, 88, 90, 96, 100, 102, 104, 108 , 112, 114 y 120
+
+    Escribe una función que reciba dos números y nos muestre por consola todos los números
+    excesivos que hay entre ellos, ambos incluidos
+
+    */
+
+    /*
+    4. Un número defectivo o número deficiente es un número n para el que la suma de sus
+    divisores es menor que 2n (o, si te resulta mas cómodo, para el que la suma de sus divisores
+    propios es menor que n). Por ejemplo, los divisores propios de 8 son 1, 2 y 4, y su suma es
+    menor que 8, por lo que 8 es deficiente.
+
+    Los primeros números deficientes son 1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 13, 14, 15, 16, 17, 19, 21,
+    22, 23, 25, 26, 27, 29, 31, 32 , 33, 34, 35, 37, 38, 39, 41, 43, 44, 45, 46, 47, 49 y 50
+
+    Escribe una función que reciba dos números y nos muestre por consola todos los números
+    abundantes que hay entre ellos, ambos incluidos
+    */
